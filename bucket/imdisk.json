@@ -1,28 +1,28 @@
 {
-  "version": "20240210",
-  "homepage": "https://sourceforge.net/projects/imdisk-toolkit/",
-  "description": "A virtual disk driver for Windows 32 and 64 bit editions. It can create virtual hard disk, floppy or CD/DVD drives using image files or system memory.",
-  "license": "GPL-2.0",
-  "url": "https://sourceforge.net/projects/imdisk-toolkit/files/20240210/ImDiskTk-x64.zip/download#/dl.zip",
-  "extract_dir": "ImDiskTk20240210",
-  "pre_install": [
-    "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
-    "$F = \"$env:USERPROFILE\\ImDisk$((Get-Date).ToString('HHmmss'))\"",
-    "if (Test-Path $env:TEMP) { $F = \"$env:TEMP\\ImDisk$((Get-Date).ToString('HHmmss'))\" }",
-    "Start-Process 'extrac32.exe' -Wait -ArgumentList '/e', '/l', \"$F\", \"$dir\\files.cab\"",
-    "Start-Process \"$F\\config.exe\" -Wait -Verb RunAs -ArgumentList '/silent', '/installfolder:\"C:\\imdisk\"', '/discutils:1', '/ramdiskui:1', '/menu_entries:0', '/shortcuts_desktop:0', '/shortcuts_all:0', '/lang:english'",
-    "Remove-Item -Path $F -Recurse -Force"
-  ],
-  "pre_uninstall": [
-    "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
-    "Start-Process \"C:\\imdisk\\config.exe\" -ArgumentList '/silentuninstall' -Wait -Verb RunAs"
-  ],
-  "checkver": {
-    "url": "https://sourceforge.net/projects/imdisk-toolkit/files/latest/download",
-    "regex": "/files/([\\d]+)/ImDiskTk-x64.zip"
-  },
-  "autoupdate": {
-    "url": "https://sourceforge.net/projects/imdisk-toolkit/files/$version/ImDiskTk-x64.zip/download",
-    "extract_dir": "ImDiskTk$version"
-  }
+    "version": "20250206",
+    "homepage": "https://sourceforge.net/projects/imdisk-toolkit/",
+    "description": "A virtual disk driver for Windows 32 and 64 bit editions. It can create virtual hard disk, floppy or CD/DVD drives using image files or system memory.",
+    "license": "GPL-2.0",
+    "url": "https://sourceforge.net/projects/imdisk-toolkit/files/20250206/ImDiskTk-x64.zip/download",
+    "extract_dir": "ImDiskTk20250206",
+    "pre_install": [
+        "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
+        "$F = \"$env:USERPROFILE\\ImDisk$((Get-Date).ToString('HHmmss'))\"",
+        "if (Test-Path $env:TEMP) { $F = \"$env:TEMP\\ImDisk$((Get-Date).ToString('HHmmss'))\" }",
+        "Start-Process 'extrac32.exe' -Wait -ArgumentList '/e', '/l', \"$F\", \"$dir\\files.cab\"",
+        "Start-Process \"$F\\config.exe\" -Wait -Verb RunAs -ArgumentList '/silent', '/installfolder:\"C:\\imdisk\"', '/discutils:1', '/ramdiskui:1', '/menu_entries:0', '/shortcuts_desktop:0', '/shortcuts_all:0', '/lang:english'",
+        "Remove-Item -Path $F -Recurse -Force"
+    ],
+    "pre_uninstall": [
+        "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
+        "Start-Process \"C:\\imdisk\\config.exe\" -ArgumentList '/silentuninstall' -Wait -Verb RunAs"
+    ],
+    "checkver": {
+        "url": "https://sourceforge.net/projects/imdisk-toolkit/files/latest/download",
+        "regex": "/files/([\\d]+)/ImDiskTk-x64.zip"
+    },
+    "autoupdate": {
+        "url": "https://sourceforge.net/projects/imdisk-toolkit/files/$version/ImDiskTk-x64.zip/download",
+        "extract_dir": "ImDiskTk$version"
+    }
 }
