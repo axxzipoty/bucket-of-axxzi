@@ -21,6 +21,6 @@
         "github": "https://github.com/UndertakerBen/PorEdgeUpd"
     },
     "autoupdate": {
-        "url": "https://github.com/UndertakerBen/PorEdgeUpd/releases/download/$version/Portable.Edge.Chromium.Updater.$version.7z",
+        "url": "https://github.com/UndertakerBen/PorEdgeUpd/releases/download/$version/Portable.Edge.Chromium.Updater.$version.7z"
     }
 }
