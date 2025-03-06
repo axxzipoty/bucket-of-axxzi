@@ -1,0 +1,18 @@
+{
+    "version": "2.2.0",
+    "description": "This is a script to pull minecraft mods from a set of API's given a manifest file.",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/newo-2001/MC-Modpack-Downloader?tab=MIT-1-ov-file"
+    },
+    "url": "https://github.com/newo-2001/MC-Modpack-Downloader/archive/refs/tags/v2.2.0.zip",
+    "homepage": "https://github.com/newo-2001/MC-Modpack-Downloader",
+    "checkver": {
+        "github": "https://github.com/newo-2001/MC-Modpack-Downloader"
+    },
+    "extract_dir": "MC-Modpack-Downloader-2.2.0",
+    "autoupdate": {
+        "url": "https://github.com/newo-2001/MC-Modpack-Downloader/archive/refs/tags/v$version.zip",
+        "extract_dir": "MC-Modpack-Downloader-$version"
+    }
+}

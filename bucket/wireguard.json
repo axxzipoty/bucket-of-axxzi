@@ -1,0 +1,31 @@
+{
+    "version": "v1.0.2",
+    "description": "WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/DrEm-s/wireguard-windows-portable?tab=MIT-1-ov-file"
+    },
+    "url": [
+        "https://github.com/DrEm-s/wireguard-windows-portable/releases/download/v1.0.2/wireguard.exe",
+        "https://github.com/DrEm-s/wireguard-windows-portable/releases/download/v1.0.2/wg.exe"
+    ],
+    "homepage": "https://github.com/DrEm-s/wireguard-windows-portable",
+    "bin": [
+        "wireguard.exe",
+        "wg.exe"
+    ],
+    "shortcuts": [
+        [
+            "wireguard.exe",
+            "wireguard"
+        ]
+    ],
+    "persist": "user",
+    "checkver": {
+        "github": "https://github.com/DrEm-s/wireguard-windows-portable"
+    },
+    "autoupdate": {
+        "url": "https://github.com/DrEm-s/wireguard-windows-portable/releases/download/$version/wg.exe",
+        "extract_dir": "wireguard-$version"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "version": "1",
+    "description": "ATLauncher is a simple and easy to use Minecraft Launcher.",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "url": "https://atlauncher.com/download/exe#/ATLauncher.exe",
+    "homepage": "https://atlauncher.com/",
+    "bin": [
+        "ATLauncher.exe"
+    ],
+    "shortcuts": [
+        [
+            "ATLauncher.exe",
+            "ATLauncher"
+        ]
+    ],
+    "post_install": [
+        "New-Item -ItemType Directory -Force -Path $dir\\atlauncher",
+        "Move-Item -Path $dir\\ATLauncher.exe -Destination $dir\\atlauncher"
+    ]
+}

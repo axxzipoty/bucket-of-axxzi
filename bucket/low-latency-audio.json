@@ -1,0 +1,35 @@
+{
+    "version": "3.0.0",
+    "description": "LowAudioLatency sets the Windows audio buffer to the smallest possible value, similar to miniant-git/REAL.",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "url": [
+        "https://github.com/spddl/LowAudioLatency/releases/download/v3.0.0/low_audio_latency.exe",
+        "https://github.com/spddl/LowAudioLatency/releases/download/v3.0.0/low_audio_latency_no_console.exe"
+    ],
+    "homepage": "https://github.com/spddl/LowAudioLatency",
+    "bin": [
+        "low_audio_latency.exe",
+        "low_audio_latency_no_console.exe"
+    ],
+    "shortcuts": [
+        [
+            "low_audio_latency.exe",
+            "Low Audio Latency"
+        ],
+        [
+            "low_audio_latency_no_console.exe",
+            "Low Audio Latency No Console"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/spddl/LowAudioLatency"
+    },
+    "autoupdate": {
+        "url": [
+            "https://github.com/spddl/LowAudioLatency/releases/download/$version/low_audio_latency.exe",
+            "https://github.com/spddl/LowAudioLatency/releases/download/$version/low_audio_latency_no_console.exe"
+        ]
+    }
+}

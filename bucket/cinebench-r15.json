@@ -1,0 +1,23 @@
+{
+  "version": "15.0",
+  "description": "A real-world cross-platform test suite that evaluates your computer's hardware capabilities.",
+  "homepage": "https://www.maxon.net/en/cinebench",
+  "license": "Freeware",
+  "architecture": {
+    "64bit": {
+      "url": "https://www.guru3d.com/getdownload/2c1b2414f56a6594ffef91236a87c0e976d52e0519bd353846bab016c2f20c7c4d6ce7dfe19a0bc843da8d448bbb670058b0c9ee9a26f5cf49bc39c97da070e6eb314629af3da2d24ab0413917f73b946419b5af447da45cefb517a0840ad3003abff4f9d5fe7828bbbb910ee270b105280545b57e45089b7e3ad0a95959f84d7e55ff3b57e38b79a0270b1e23fd3853dd1288eb9bb97eec2c81b26ec4d5022bafb49a8ee3fbcdb75a4df2891f186d4e27e41995ce304ee1243e#/dl.zip",
+      "installer": {
+        "script": [
+          "Get-ChildItem -Path \"$dir\" -Filter \"CINEBENCH OSX*\" | Remove-Item -Force -Recurse -ErrorAction SilentlyContinue",
+          "Get-ChildItem -Path \"$dir\" -Filter \"Readme*\" | Remove-Item -Force -Recurse -ErrorAction SilentlyContinue"
+        ]
+      },
+      "shortcuts": [
+        [
+          "CINEBENCH Windows 64 Bit.exe",
+          "Cinebench R15"
+        ]
+      ]
+    }
+  }
+}

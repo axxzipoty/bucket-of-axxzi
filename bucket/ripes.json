@@ -1,0 +1,25 @@
+{
+    "version": "v2.2.6",
+    "description": "A graphical processor simulator and assembly editor for the RISC-V ISA.",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/mortbopet/Ripes?tab=MIT-1-ov-file"
+    },
+    "url": "https://github.com/mortbopet/Ripes/releases/download/v2.2.6/Ripes-v2.2.6-win-x86_64.zip",
+    "homepage": "https://github.com/mortbopet/Ripes",
+    "bin": [
+        "Ripes.exe"
+    ],
+    "shortcuts": [
+        [
+            "Ripes.exe",
+            "Ripes"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/mortbopet/Ripes"
+    },
+    "autoupdate": {
+        "url": "https://github.com/mortbopet/Ripes/releases/download/$version/Ripes-$version-win-x86_64.zip"
+    }
+}

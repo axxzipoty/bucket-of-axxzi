@@ -1,0 +1,20 @@
+{
+    "version": "1",
+    "description": "FLACI ist in erster Linie ein didaktisches Werkzeug zur aktiven Aneignung von Grundkenntnissen aus der theoretischen Informatik, wie sie im Informatikstudium und in entsprechenden Kursen der gymnasialen Oberstufe vermittelt werden.",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "url": "https://flaci.com/home/FLACI-win32-x64.zip",
+    "hash": "596d95a389d51eb01cc727a03c697779da218c7d2c6a4387a3a9155f05449e7a",
+    "homepage": "https://flaci.com/home/",
+    "bin": [
+        "FLACI.exe"
+    ],
+    "extract_dir": "FLACI-win32-x64",
+    "shortcuts": [
+        [
+            "FLACI.exe",
+            "Flaci"
+        ]
+    ]
+}

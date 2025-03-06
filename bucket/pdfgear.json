@@ -1,0 +1,25 @@
+{
+  "autoupdate": {
+    "url": "https://www.pdfgear.com/download/pdfgear_setup_v$version.exe"
+  },
+  "description": "Read, edit, convert, merge, and sign PDF files across devices, for completely free and without signing up.",
+  "innosetup": true,
+  "homepage": "https://www.pdfgear.com/",
+  "license": "Free",
+  "hash": "088c276fe54f8641f98af34cc9ff67e514efa1f4895bbbc0c3508d04c83c3e04",
+  "shortcuts": [
+    [
+      "PDFLauncher.exe",
+      "PDFGear"
+    ]
+  ],
+  "bin": [
+    "FileWatcher.exe",
+    "pdfconverter.exe",
+    "pdfeditor.exe",
+    "PDFLauncher.exe",
+    "RegExt.exe"
+  ],
+  "url": "https://www.pdfgear.com/download/pdfgear_setup_v2.1.8.exe",
+  "version": "2.1.8"
+}

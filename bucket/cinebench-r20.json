@@ -1,0 +1,17 @@
+{
+  "version": "20.060",
+  "description": "A real-world cross-platform test suite that evaluates your computer's hardware capabilities.",
+  "homepage": "https://www.maxon.net/en/cinebench",
+  "license": "Freeware",
+  "architecture": {
+    "64bit": {
+      "url": "https://www.guru3d.com/getdownload/2c1b2414f56a6594ffef91236a87c0e976d52e021fb7333846bab016c2f20c7c4d6ce7dfe19a0bc843da8d448bbb670058b0c9ee9a26f5cf49bc39c97da070e6eb314629af3da2d24ab0413917f73b946419b5af447da45cefb517a0840ad3003abff4f9d5fe7828bbbb910ee270b105280545b57e45089b7e3ad0a95959f84d7e55ff3b54e6fa0ef80e395815a6717e8353cba4a0fe68e003d0ea2dd6c91d6ccaf6c2cdf1e7d2f03f08b7c61c533b1a4fa246c0982146e92571211744fd61840b21#/dl.zip",
+      "shortcuts": [
+        [
+          "Cinebench.exe",
+          "Cinebench R20"
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "version": "v1.5.1.0",
+    "description": "Portable Edge (Chromium) Updater.",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/UndertakerBen/PorEdgeUpd?tab=MIT-1-ov-file"
+    },
+    "url": "https://github.com/UndertakerBen/PorEdgeUpd/releases/download/v1.5.1.0/Portable.Edge.Chromium.Updater.v1.5.1.0.7z",
+    "homepage": "https://github.com/UndertakerBen/PorEdgeUpd",
+    "hash": "F6B2597C2E3139A1178D1788F4F607C425757D16DA1527F601BCE768799AE4DA",
+    "bin": [
+        "Portable Edge (Chromium) Updater.exe"
+    ],
+    "shortcuts": [
+        [
+            "Portable Edge (Chromium) Updater.exe",
+            "Portable Edge Updater"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/UndertakerBen/PorEdgeUpd"
+    },
+    "autoupdate": {
+        "url": "https://github.com/UndertakerBen/PorEdgeUpd/releases/download/$version/Portable.Edge.Chromium.Updater.$version.7z",
+    }
+}
