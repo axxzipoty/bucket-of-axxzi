@@ -5,14 +5,14 @@
         "identifier": "MIT"
     },
     "url": "https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v5.6/UVR_v5.6.0_setup.exe#/dl.zip",
-	"hash": "3516daea39ccb9fead27e8ba5879375a08b20a428264a7c1be6db1be7765b0fe",
-	"pre_install": [
-		"Expand-7zipArchive \"$dir\\UVR_v5.6.0_setup.exe\" -DestinationPath \"$dir\\.exe.d\" -Removal",
+    "hash": "3516daea39ccb9fead27e8ba5879375a08b20a428264a7c1be6db1be7765b0fe",
+    "pre_install": [
+        "Expand-7zipArchive \"$dir\\UVR_v5.6.0_setup.exe\" -DestinationPath \"$dir\\.exe.d\" -Removal",
         "Expand-7zipArchive \"$dir\\.exe.d\\.text\" -DestinationPath \"$dir\"",
         "Remove-Item \"$dir\\.exe.d\" -Recurse",
         "Expand-7zipArchive \"$dir\\UVR_v5.6.0_setup*.exe\" -Removal",
         "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\", \"$dir\\Redist\" -Recurse"
-	],
+    ],
     "homepage": "https://github.com/Anjok07/ultimatevocalremovergui",
     "bin": [
         "UVR.exe"

@@ -9,25 +9,25 @@
         "https://huggingface.co/wok000/vcclient000/resolve/main/vcclient_win_cuda_2.0.65-beta.zip"
     ],
     "homepage": "https://github.com/w-okada/voice-changer",
-	"hash": "ba66c89f1be5d373554e084924e18216c5e7447e2a0adc778b8613d755510859",
+    "hash": "ba66c89f1be5d373554e084924e18216c5e7447e2a0adc778b8613d755510859",
     "bin": [
         "main/start_https.bat",
-		"main/start_http.bat",
-		"main/start_http_with_ngrok.bat"
+        "main/start_http.bat",
+        "main/start_http_with_ngrok.bat"
     ],
     "shortcuts": [
         [
             "main/start_https.bat",
             "VCClient"
         ],
-		[
-			"main/start_http.bat",
-			"VCClient (insecure)"
-		],
-		[
-			"main/start_http_with_ngrok.bat",
-			"VCClient (NGROK)"
-		]
+        [
+            "main/start_http.bat",
+            "VCClient (insecure)"
+        ],
+        [
+            "main/start_http_with_ngrok.bat",
+            "VCClient (NGROK)"
+        ]
     ],
     "extract_dir": "dist",
     "checkver": {
