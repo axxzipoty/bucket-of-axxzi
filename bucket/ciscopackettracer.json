@@ -7,6 +7,7 @@
     "url": "https://archive.org/download/cpt822/CiscoPacketTracer822_64bit_setup_signed.exe",
     "homepage": "https://www.computernetworkingnotes.com/ccna-study-guide/download-packet-tracer-for-windows-and-linux.html",
     "hash": "2c3bb69e165249681225283e8208573c2e6691467ff1b83e99eb475837b6d36e",
+    "innosetup": true,
     "bin": [
         "bin\\PacketTracer.exe"
     ],
