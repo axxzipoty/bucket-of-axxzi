@@ -1,0 +1,19 @@
+{
+    "version": "8.2.2",
+    "description": "Cisco Packet Tracer is a comprehensive networking simulation software tool for teaching and learning how to create network topologies and imitate modern computer networks.",
+    "license": {
+        "identifier": "Proprietary"
+    },
+    "url": "https://archive.org/download/cpt822/CiscoPacketTracer822_64bit_setup_signed.exe",
+    "homepage": "https://www.computernetworkingnotes.com/ccna-study-guide/download-packet-tracer-for-windows-and-linux.html",
+    "hash": "2c3bb69e165249681225283e8208573c2e6691467ff1b83e99eb475837b6d36e",
+    "bin": [
+        "bin\\PacketTracer.exe"
+    ],
+    "shortcuts": [
+        [
+            "bin\\PacketTracer.exe",
+            "Cisco Packet Tracer"
+        ]
+    ]
+}
