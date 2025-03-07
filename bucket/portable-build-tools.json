@@ -1,10 +1,10 @@
 {
-    "version": "v2.10.2",
+    "version": "2.10.2",
     "description": "Portable VS Build Tools installer.",
     "license": {
         "identifier": "Unknown"
     },
-    "url": "https://github.com/Data-Oriented-House/PortableBuildTools/releases/download/v2.10.2/PortableBuildTools.exe",
+    "url": "https://github.com/Data-Oriented-House/PortableBuildTools/releases/tag/2.10.2/PortableBuildTools.exe",
     "homepage": "https://github.com/Data-Oriented-House/PortableBuildTools",
     "bin": "PortableBuildTools.exe",
     "shortcuts": [
