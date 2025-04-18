@@ -1,5 +1,5 @@
 {
-    "version": "v0.3.1-hotfox.1",
+    "version": "v0.3.4",
     "description": "A Gamestream host for Artemis / Moonlight with automatic setup for virtual desktops.",
     "homepage": "https://github.com/ClassicOldSong/Apollo",
     "license": "GPL-3.0-only",
