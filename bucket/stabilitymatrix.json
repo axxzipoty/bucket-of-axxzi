@@ -19,7 +19,7 @@
     ],
     "persist": "Data",
     "checkver": {
-        "github": "https://github.com/1Remote/1Remote"
+        "github": "https://github.com/LykosAI/StabilityMatrix"
     },
     "autoupdate": {
         "url": "https://github.com/LykosAI/StabilityMatrix/releases/download/$version/StabilityMatrix-win-x64.zip"
