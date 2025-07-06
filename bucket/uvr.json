@@ -1,5 +1,5 @@
 {
-    "version": "v5.6",
+    "version": "5.6",
     "description": "GUI for a Vocal Remover that uses Deep Neural Networks.",
     "license": {
         "identifier": "MIT"
@@ -28,7 +28,7 @@
         "github": "https://github.com/Anjok07/ultimatevocalremovergui"
     },
     "autoupdate": {
-        "url": "https://github.com/Anjok07/ultimatevocalremovergui/releases/download/$version/UVR_$version_setup.exe#/dl.zip",
+        "url": "https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v$version/UVR_$version_setup.exe#/dl.zip",
         "extract_dir": "chaiNNer-$version"
     }
 }

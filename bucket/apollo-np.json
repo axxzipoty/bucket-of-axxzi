@@ -1,5 +1,5 @@
 {
-    "version": "v0.3.4",
+    "version": "0.3.4",
     "description": "A Gamestream host for Artemis / Moonlight with automatic setup for virtual desktops.",
     "homepage": "https://github.com/ClassicOldSong/Apollo",
     "license": "GPL-3.0-only",
@@ -48,7 +48,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/ClassicOldSong/Apollo/releases/download/$version/Apollo.exe#/dl.7z"
+                "url": "https://github.com/ClassicOldSong/Apollo/releases/download/v$version/Apollo.exe#/dl.7z"
             }
         }
     }

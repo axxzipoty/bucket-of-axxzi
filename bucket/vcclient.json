@@ -1,15 +1,15 @@
 {
-    "version": "2.0.65-beta",
+    "version": "2.0.78-beta",
     "description": "Realtime Voice Changer",
     "license": {
         "identifier": "MIT",
         "url": "https://github.com/w-okada/voice-changer?tab=License-1-ov-file"
     },
     "url": [
-        "https://huggingface.co/wok000/vcclient000/resolve/main/vcclient_win_cuda_2.0.65-beta.zip"
+        "https://huggingface.co/wok000/vcclient000/blob/main/vcclient_win_cuda_2.0.78-beta.zip"
     ],
     "homepage": "https://github.com/w-okada/voice-changer",
-    "hash": "ba66c89f1be5d373554e084924e18216c5e7447e2a0adc778b8613d755510859",
+    "hash": "1ca9151005ab64658cfc4bf40f845008d2543abe7ff67db2da9d6889f07f7ae0",
     "bin": [
         "main/start_https.bat",
         "main/start_http.bat",
@@ -31,10 +31,10 @@
     ],
     "extract_dir": "dist",
     "checkver": {
-        "github": "https://huggingface.co/wok000/vcclient000/resolve/main/"
+        "github": "https://huggingface.co/wok000/vcclient000/tree/main/"
     },
     "autoupdate": {
-        "url": "https://huggingface.co/wok000/vcclient000/resolve/main/",
+        "url": "https://huggingface.co/wok000/vcclient000/tree/main/",
         "extract_dir": "dist"
     }
 }
