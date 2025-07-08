@@ -46,7 +46,7 @@
     ],
     "checkver": {
         "github": "https://github.com/ClassicOldSong/Apollo",
-        "regex": "tag/([\\d.]+(?:[.-][\\w.]+)?)"
+        "regex": "tag/(v?[\\d.]+(?:[.-][\\w.]+)?)"
     },
     "autoupdate": {
         "architecture": {
