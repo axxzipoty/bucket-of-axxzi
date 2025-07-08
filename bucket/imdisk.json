@@ -2,9 +2,25 @@
     "version": "20250206",
     "homepage": "https://sourceforge.net/projects/imdisk-toolkit/",
     "description": "A virtual disk driver for Windows 32 and 64 bit editions. It can create virtual hard disk, floppy or CD/DVD drives using image files or system memory.",
-    "license": "GPL-2.0",
+    "license": "WTFPL",
     "url": "https://sourceforge.net/projects/imdisk-toolkit/files/20250206/ImDiskTk-x64.zip/download",
     "extract_dir": "ImDiskTk20250206",
+    "shortcuts": [
+        [
+            "MountImg.exe",
+            "ImDisk Mount Image File"
+        ],
+        [
+            "RamDiskUI.exe",
+            "ImDisk RamDisk Configuration"
+        ],
+        [
+            "imdisk_cpl.bat",
+            "ImDisk Virtual Disk Driver",
+            "",
+            "config.exe"
+        ]
+    ],
     "pre_install": [
         "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
         "$F = \"$env:USERPROFILE\\ImDisk$((Get-Date).ToString('HHmmss'))\"",
@@ -18,8 +34,8 @@
         "Start-Process \"C:\\imdisk\\config.exe\" -ArgumentList '/silentuninstall' -Wait -Verb RunAs"
     ],
     "checkver": {
-        "url": "https://sourceforge.net/projects/imdisk-toolkit/files/latest/download",
-        "regex": "/files/([\\d]+)/ImDiskTk-x64.zip"
+        "url": "https://sourceforge.net/projects/imdisk-toolkit/files/",
+        "regex": "Version\\s+([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://sourceforge.net/projects/imdisk-toolkit/files/$version/ImDiskTk-x64.zip/download",
