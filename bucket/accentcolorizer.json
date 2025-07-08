@@ -1,0 +1,38 @@
+{
+    "version": "1.2.0",
+    "description": "Accent Colorization for Windows 11 File Explorer Icon Glyphs",
+    "homepage": "https://github.com/krlvm/accentcolorizer",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/krlvm/AccentColorizer/releases/download/v1.2.0/accentcolorizer-static-x64.exe",
+            "hash": "08FF3F95F937FE1356AE611FA95BA5DC1A43DCE2E90211EC5E26E6039CA20A03"
+        }
+    },
+    "installer": {
+        "script": [
+            "$startupPath = [Environment]::GetFolderPath('Startup')",
+            "$shortcutPath = Join-Path $startupPath 'AccentColorizer.lnk'",
+            "$shell = New-Object -ComObject WScript.Shell",
+            "$shortcut = $shell.CreateShortcut($shortcutPath)",
+            "$shortcut.TargetPath = \"$dir\\accentcolorizer-static-x64.exe\"",
+            "$shortcut.WorkingDirectory = \"$dir\"",
+            "$shortcut.Description = 'Start AccentColorizer on user login.'",
+            "$shortcut.IconLocation = \"$dir\\accentcolorizer-static-x64.exe\"",
+            "$shortcut.Save()"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "$startupPath = [Environment]::GetFolderPath('Startup')",
+            "$shortcutPath = Join-Path $startupPath 'AccentColorizer.lnk'",
+            "if (Test-Path $shortcutPath) { Remove-Item $shortcutPath -Force }"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/krlvm/accentcolorizer"
+    },
+    "autoupdate": {
+        "url": "https://github.com/krlvm/AccentColorizer/releases/download/v$version/accentcolorizer-static-x64.exe"
+    }
+}

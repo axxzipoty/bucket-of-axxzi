@@ -1,0 +1,20 @@
+{
+    "version": "3.1.1",
+    "description": "Sets a system-wide environment variable for MY_CUSTOM_APP.",
+    "homepage": "https://github.com/ALTaleX531/TranslucentFlyouts",
+    "license": "LGPL-3.0",
+    "url": "https://github.com/ALTaleX531/TranslucentFlyouts/releases/download/v3.1.1/TranslucentFlyouts.Win32.V3.x64.rar",
+    "hash": "2C1860599F6A5B78234279DEC9E6A603ECE3E62E4198F6C44DC344D7474F5990",
+    "pre_install": [
+        "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }"
+    ],
+    "installer": {
+        "script": "Invoke-ExternalCommand cmd -ArgumentList @('/c', \"$dir\\install_win32.bat\") -RunAs | Out-Null"
+    },
+    "pre_uninstall": [
+        "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }"
+    ],
+    "uninstaller": {
+        "script": "Invoke-ExternalCommand cmd -ArgumentList @('/c', \"$dir\\uninstall_win32.bat\") -RunAs | Out-Null"
+    }
+}

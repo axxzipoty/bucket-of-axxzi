@@ -1,0 +1,28 @@
+{
+    "version": "2.0.1",
+    "description": "Add background Blur effect or Acrylic (Mica for win11) effect to explorer for win10 and win11",
+    "homepage": "https://github.com/Maplespe/ExplorerBlurMica",
+    "license": "LGPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Maplespe/ExplorerBlurMica/releases/download/2.0.1/Release_x64.zip",
+            "hash": "70E982BBFEDCA5F1DF51F7B2F7713CEDAF3124053074737B3D77E460894D2FC7"
+        }
+    },
+    "notes": "The console will flicker, since the explorer termination script will execute in the same terminal, you can ignore that.",
+    "extract_dir": "Release",
+    "pre_install": "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
+    "installer": {
+        "script": "& \"$dir\\register.cmd\""
+    },
+    "pre_uninstall": "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
+    "uninstaller": {
+        "script": "& \"$dir\\uninstall.cmd\""
+    },
+    "checkver": {
+        "github": "https://github.com/Maplespe/ExplorerBlurMica"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Maplespe/ExplorerBlurMica/releases/download/$version/Release_x64.zip"
+    }
+}

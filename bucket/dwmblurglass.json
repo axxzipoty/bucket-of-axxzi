@@ -1,0 +1,43 @@
+{
+    "version": "2.3.1",
+    "description": "Add custom effect to global system title bar, support win10 and win11.",
+    "homepage": "https://github.com/Maplespe/DWMBlurGlass",
+    "license": "LGPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Maplespe/DWMBlurGlass/releases/download/2.3.1r/DWMBlurGlass_2.3.1_x64.zip",
+            "hash": "CFDA271D28F0FD9BDA4978BD8BD793E31957632C5CA442441DE9701C47F6707E"
+        }
+    },
+    "notes": "DWMBlurGlass cannot be installed in the user directory and resides on \"C:\\DWMBlurGlass\" instead.",
+    "extract_dir": "Release",
+    "post_install": [
+        "Write-Host 'Copying application files to C:\\DWMBlurGlass...'",
+        "New-Item -ItemType Directory -Force -Path 'C:\\DWMBlurGlass' | Out-Null",
+        "Copy-Item -Path \"$dir\\*\" -Destination 'C:\\DWMBlurGlass' -Recurse -Force",
+        "$startupPath = [Environment]::GetFolderPath('StartMenu') + '\\Programs\\Scoop Apps'",
+        "$shortcutPath = Join-Path $startupPath 'DWMBlurGlass.lnk'",
+        "$shell = New-Object -ComObject WScript.Shell",
+        "$shortcut = $shell.CreateShortcut($shortcutPath)",
+        "$shortcut.TargetPath = \"C:\\DWMBlurGlass\\DWMBlurGlass.exe\"",
+        "$shortcut.WorkingDirectory = \"$dir\"",
+        "$shortcut.IconLocation = \"C:\\DWMBlurGlass\\DWMBlurGlass.exe\"",
+        "$shortcut.Save()",
+        "Get-ChildItem -Path $dir | Where-Object { $_.Name -notin @('manifest.json', 'install.json') } | Remove-Item -Recurse -Force"
+    ],
+    "pre_uninstall": [
+        "Write-Host 'Removing application files from C:\\DWMBlurGlass...'",
+        "if (Test-Path 'C:\\DWMBlurGlass') { Remove-Item -Path 'C:\\DWMBlurGlass' -Recurse -Force }",
+        "$startupPath = [Environment]::GetFolderPath('Startup') + '\\Programs\\Scoop Apps'",
+        "$shortcutPath = Join-Path $startupPath 'DWMBlurGlass.lnk'",
+        "if (Test-Path $shortcutPath) { Remove-Item $shortcutPath -Force }"
+
+    ],
+    "checkver": {
+        "github": "https://github.com/Maplespe/DWMBlurGlass"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Maplespe/DWMBlurGlass/releases/download/$version/DWMBlurGlass_$version_x64.zip"
+    }
+}
+
