@@ -17,5 +17,8 @@
     "checkver": {
         "url": "https://www.resplendence.com/latencymon",
         "re": "Latest version: LatencyMon v ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.resplendence.com/download/LatencyMon.exe"
     }
 }
