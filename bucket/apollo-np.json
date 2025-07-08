@@ -1,5 +1,5 @@
 {
-    "version": "0.3.4",
+    "version": "0.3.7-hotfix.1",
     "description": "A Gamestream host for Artemis / Moonlight with automatic setup for virtual desktops.",
     "homepage": "https://github.com/ClassicOldSong/Apollo",
     "license": "GPL-3.0-only",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ClassicOldSong/Apollo/releases/download/v0.3.4/Apollo.exe#/dl.7z",
-            "hash": "905933A3F267A87F89782A9DA7D06BB82362DD6C93B6CEB7FE84DA83C4C344DB"
+            "url": "https://github.com/ClassicOldSong/Apollo/releases/download/v0.3.7-hotfix.1/Apollo-0.3.7-hotfix.1.exe#/dl.7z",
+            "hash": "6f9738c0d773a19292c78627931493f03bcf953bb76ad5647be2d57b67cd9624"
         }
     },
     "pre_install": [
@@ -36,7 +36,7 @@
         ]
     ],
     "persist": "config",
-    "pre_uninstall":[
+    "pre_uninstall": [
         "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
         "Start-Process \"$dir\\scripts\\delete-firewall-rule.bat\" -WindowStyle Hidden -Wait",
         "Start-Process \"$dir\\scripts\\uninstall-service.bat\" -WindowStyle Hidden -Wait",
