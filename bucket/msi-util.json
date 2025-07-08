@@ -1,0 +1,21 @@
+{
+    "version": "3.0",
+    "description": "Utility program for Message Signaled Interrupts",
+    "homepage": "https://archive.org/details/msi-utility-v-3",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://archive.org/download/msi-utility-v-3/MSI%20Utility%20V3.exe",
+            "hash": "0142AFC21FE61AA4209A4B0D994D724F743718F1F42EC07E41FC63CC43FB6CA6"
+        }
+    },
+    "pre_install": [
+        "Rename-Item \"$dir\\MSI Utility V3.exe\" \"$dir\\MSI-Util.exe\""
+    ],
+    "shortcuts": [
+        [
+            "MSI-Util.exe",
+            "MSI Util"
+        ]
+    ]
+}

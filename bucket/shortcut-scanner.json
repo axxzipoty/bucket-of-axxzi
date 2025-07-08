@@ -1,0 +1,18 @@
+{
+    "version": "1.0",
+    "description": "Shortcut Scanner removes broken links that can exploit Microsoft Windows shortcuts.",
+    "homepage": "https://www.majorgeeks.com/files/details/shortcut_scanner.html",
+    "license": "Free",
+    "architecture": {
+        "64bit": {
+            "url": "https://files1.majorgeeks.com/0785054da65789e9b19bb68440c72a558fa23e49/spyware/shortcut_scannerv1-0.zip",
+            "hash": "bf03404e23c6e8b5a6d4602291063317455bb59658681c8d2b60964e8439366b"
+        }
+    },
+    "shortcuts": [
+        [
+            "ShortcutScanner64.exe",
+            "Shortcut Scanner"
+        ]
+    ]
+}
