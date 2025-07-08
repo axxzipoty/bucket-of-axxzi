@@ -1,0 +1,28 @@
+{
+    "version": "198",
+    "description": "Floating IPS is a patcher for IPS and BPS files.",
+    "homepage": "https://github.com/Alcaro/Flips",
+    "license": "GPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Alcaro/Flips/releases/download/v198/flips-windows.zip",
+            "hash": "802BFB315DCA08A2F765DD6864472ECBB2B482681045C573D5E4B657B8E5295D"
+        }
+    },
+    "shortcuts": [
+        [
+            "flips.exe",
+            "Flips"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Alcaro/Flips"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Alcaro/Flips/releases/download/v$version/flips-windows.zip"
+            }
+        }
+    }
+}
