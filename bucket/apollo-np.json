@@ -46,12 +46,12 @@
     ],
     "checkver": {
         "github": "https://github.com/ClassicOldSong/Apollo",
-        "regex": "tag/(v?([\\d.]+(?:[.-][\\w.]+)?))"
+        "regex": "tag/v?([\\d.]+(?:[.-][\\w.]+)?)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/ClassicOldSong/Apollo/releases/download/$version/Apollo-$1.exe#/dl.7z"
+                "url": "https://github.com/ClassicOldSong/Apollo/releases/download/v$version/Apollo-$version.exe#/dl.7z"
             }
         }
     }
