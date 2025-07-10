@@ -11,6 +11,7 @@
     },
     "notes": "DWMBlurGlass cannot be installed in the user directory and resides on \"C:\\DWMBlurGlass\" instead.",
     "extract_dir": "Release",
+    "persist" : "data",
     "post_install": [
         "Write-Host 'Copying application files to C:\\DWMBlurGlass...'",
         "New-Item -ItemType Directory -Force -Path 'C:\\DWMBlurGlass' | Out-Null",

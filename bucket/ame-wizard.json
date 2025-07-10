@@ -1,0 +1,18 @@
+{
+    "homepage": "https://ameliorated.io/",
+    "version": "0.7.7",
+    "description": "The Ultimate tool for modifying Windows.",
+    "license": "MIT",
+    "url": "https://github.com/Ameliorated-LLC/trusted-uninstaller-cli/releases/download/0.7.7/AME-Wizard-Beta.exe",
+    "shortcuts": [
+        [
+            "AME-Wizard-Beta.exe",
+            "AME Wizard"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/Ameliorated-LLC/trusted-uninstaller-cli/releases/download/$version/AME-Wizard-Beta.exe"
+    }
+}
+

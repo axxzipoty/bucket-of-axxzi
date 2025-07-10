@@ -11,6 +11,7 @@
     },
     "notes": "The console will flicker, since the explorer termination script will execute in the same terminal, you can ignore that.",
     "extract_dir": "Release",
+    "persist": "config.ini",
     "pre_install": "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
     "installer": {
         "script": "& \"$dir\\register.cmd\""
