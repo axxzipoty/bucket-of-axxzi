@@ -1,13 +1,13 @@
 {
-    "version": "1.4",
+    "version": "1.4.1",
     "description": "An inspection tool for UWP and WinUI 3 applications. Seamlessly view and manipulate UI elements and their properties in real time.",
     "license": {
         "identifier": "GPL-3.0",
         "url": "https://github.com/m417z/UWPSpy?tab=GPL-3.0-1-ov-file"
     },
-    "url": "https://github.com/m417z/UWPSpy/releases/download/v1.4/UWPSpy.zip",
+    "url": "https://github.com/m417z/UWPSpy/releases/download/v1.4.1/UWPSpy.zip",
     "homepage": "https://github.com/m417z/UWPSpy",
-    "hash": "A57BB25BF852020A863CC52B34A0CA72063D4540876C0673B6667F06727F3C27",
+    "hash": "a825b485da1c2f2d154dec8fb5dc0d37778ea32b190351520d21801121c36d8d",
     "shortcuts": [
         [
             "UWPSpy.exe",
@@ -21,4 +21,3 @@
         "url": "https://github.com/m417z/UWPSpy/releases/download/v$version/UWPSpy.zip"
     }
 }
-
