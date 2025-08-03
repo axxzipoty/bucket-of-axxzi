@@ -1,5 +1,5 @@
 {
-    "version": "0.3.7-hotfix.1",
+    "version": "0.4.5",
     "description": "A Gamestream host for Artemis / Moonlight with automatic setup for virtual desktops.",
     "homepage": "https://github.com/ClassicOldSong/Apollo",
     "license": "GPL-3.0-only",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ClassicOldSong/Apollo/releases/download/v0.3.7-hotfix.1/Apollo-0.3.7-hotfix.1.exe#/dl.7z",
-            "hash": "6f9738c0d773a19292c78627931493f03bcf953bb76ad5647be2d57b67cd9624"
+            "url": "https://github.com/ClassicOldSong/Apollo/releases/download/v0.4.5/Apollo-0.4.5.exe#/dl.7z",
+            "hash": "d6e9f5934d94b8829b70fb74d6dbfb0ae0d906809c96b43bff04f4885c6cb489"
         }
     },
     "pre_install": [
