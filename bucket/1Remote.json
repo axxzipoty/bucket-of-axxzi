@@ -1,16 +1,14 @@
 {
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "1Remote is a modern personal remote session manager and launcher. It is a single place to manage all your remote sessions supporting number of different protocols.",
     "license": {
         "identifier": "GPL-3.0",
         "url": "https://github.com/1Remote/1Remote?tab=GPL-3.0-1-ov-file"
     },
-    "url": "https://github.com/1Remote/1Remote/releases/download/1.2.0/1Remote-1.2.0-net9-x64.zip",
+    "url": "https://github.com/1Remote/1Remote/releases/download/1.2.1/1Remote-1.2.1-net9-x64.zip",
     "homepage": "https://github.com/1Remote/1Remote",
-    "hash": "2c3bb69e165249681225283e8208573c2e6691467ff1b83e99eb475837b6d36e",
-    "bin": [
-        "PRemoteM.exe"
-    ],
+    "hash": "825ae0d6d6ed45dbb155ed809b976c2a7532578b124b3b55c0cfc6bfa3267411",
+    "bin": "PRemoteM.exe",
     "shortcuts": [
         [
             "PRemoteM.exe",
