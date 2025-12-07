@@ -1,0 +1,25 @@
+{
+    "version": "1.4.2",
+    "description": "1Remote is a modern personal remote session manager and launcher. It is a single place to manage all your remote sessions supporting number of different protocols.",
+    "license": {
+        "identifier": "GPL-3.0",
+        "url": "https://github.com/Satanarious/TranslucentFlyoutsConfig?tab=GPL-3.0-1-ov-file"
+    },
+    "url": "https://github.com/Satanarious/TranslucentFlyoutsConfig/releases/download/v1.4.2/TranslucentFlyoutsConfigV1.4.2.zip",
+    "homepage": "https://github.com/Satanarious/TranslucentFlyoutsConfig",
+    "hash": "11B22DB313458B63F7C18FD5F88FA3D890120B4690016B8C606246F3F52A0CD9",
+    "shortcuts": [
+        [
+            "TranslucentFlyoutsConfig.exe",
+            "TranslucentFlyoutsConfig"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Satanarious/TranslucentFlyoutsConfig"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Satanarious/TranslucentFlyoutsConfig/releases/download/v$version/TranslucentFlyoutsConfigV$version.zip",
+        "extract_dir": "PRemoteM-$version"
+    }
+}
+

@@ -1,0 +1,32 @@
+{
+    "version": "1.3.0",
+    "description": "Real time face swap and one-click video deepfake with only a single image.",
+    "license": {
+        "identifier": "AGPL-3.0",
+        "url": "https://github.com/hacksider/Deep-Live-Cam/tree/cuda_deep-live-cam?tab=License-1-ov-file"
+    },
+    "url": [
+        "https://web.archive.org/web/20240826000819mp_/https://github.com/hacksider/Deep-Live-Cam/releases/download/cuda_deep-live-cam/Deep-Live-Cam-cuda.z01",
+        "https://web.archive.org/web/20240826000819mp_/https://github.com/hacksider/Deep-Live-Cam/releases/download/cuda_deep-live-cam/Deep-Live-Cam-cuda.z02",
+        "https://web.archive.org/web/20240826000819mp_/https://github.com/hacksider/Deep-Live-Cam/releases/download/cuda_deep-live-cam/Deep-Live-Cam-cuda.z03",
+        "https://web.archive.org/web/20240826000819mp_/https://github.com/hacksider/Deep-Live-Cam/releases/download/cuda_deep-live-cam/Deep-Live-Cam-cuda.zip"
+    ],
+    "homepage": "https://github.com/hacksider/Deep-Live-Cam",
+    "shortcuts": [
+        [
+            "start_portable_nvidia.bat",
+            "Deep Live Cam"
+        ]
+    ],
+    "post_install": {
+      "script": [
+        "New-Item -ItemType Junction -Path \"$dir\\tmp\\Desktop\" -Target \"~\\Desktop\"",
+        "New-Item -ItemType Junction -Path \"$dir\\tmp\\Downloads\" -Target \"~\\Downloads\""
+      ]
+    },
+    "persist": [
+      "models",
+      "tmp"
+    ],
+    "extract_dir": "Deep-Live-Cam-cuda"
+}

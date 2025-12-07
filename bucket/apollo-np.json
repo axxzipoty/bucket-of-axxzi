@@ -21,7 +21,7 @@
         "Start-Process \"$dir\\drivers\\sudovda\\install.bat\" -WindowStyle Hidden -Wait",
         "Start-Process \"$dir\\scripts\\migrate-config.bat\" -WindowStyle Hidden -Wait",
         "Start-Process \"$dir\\scripts\\add-firewall-rule.bat\" -WindowStyle Hidden -Wait",
-        "Start-Process \"$dir\\scripts\\install-gamepad.bat\" -WindowStyle Hidden -Wait",
+        "powershell \"$dir\\scripts\\install-gamepad.ps1\" -WindowStyle Hidden -Wait",
         "Start-Process \"$dir\\scripts\\install-service.bat\" -WindowStyle Hidden -Wait",
         "Start-Process \"$dir\\scripts\\autostart-service.bat\" -WindowStyle Hidden -Wait"
     ],
@@ -41,7 +41,7 @@
         "Start-Process \"$dir\\scripts\\delete-firewall-rule.bat\" -WindowStyle Hidden -Wait",
         "Start-Process \"$dir\\scripts\\uninstall-service.bat\" -WindowStyle Hidden -Wait",
         "Start-Process \"$dir\\sunshine.exe\" -ArgumentList \"--restore-nvprefs-undo\" -WindowStyle Hidden -Wait",
-        "Start-Process \"$dir\\scripts\\uninstall-gamepad.bat\" -WindowStyle Hidden -Wait",
+        "powershell \"$dir\\scripts\\uninstall-gamepad.ps1\" -WindowStyle Hidden -Wait",
         "Start-Process \"$dir\\drivers\\sudovda\\uninstall.bat\" -WindowStyle Hidden"
     ],
     "checkver": {

@@ -1,0 +1,25 @@
+{
+    "version": "1.2",
+    "description": "Graphical User Interface with NW.js for 9kw.eu",
+    "license": {
+        "identifier": "GPL-3.0",
+        "url": "https://github.com/1Remote/1Remote?tab=GPL-3.0-1-ov-file"
+    },
+    "url": "https://www.9kw.eu/grafik/plugins/9kw-client-desktop-64.zip",
+    "homepage": "https://www.9kw.eu/",
+    "hash": "5DC0B3EF999A8C408DD1EF29F92FD9DDCD8E93B1ED99D15323AC01883289F2EF",
+    "extract_dir": "nwjs-v0.26.6-win-x64",
+    "shortcuts": [
+        [
+            "nw.exe",
+            "9kw.eu Client"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.9kw.eu/software_9kwclient.html",
+        "regex": "9kw client v?([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.9kw.eu/grafik/9kw_client.zip"
+    }
+}

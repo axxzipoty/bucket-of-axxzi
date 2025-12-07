@@ -1,0 +1,28 @@
+{
+    "version": "v0.0.3-rc3",
+    "description": "Eden is an experimental open-source emulator for the Nintendo Switch, built with performance and stability in mind. It is written in C++ with cross-platform support for Windows, Linux, FreeBSD, Solaris, OpenBSD, and Android.",
+    "homepage": "https://eden-emu.dev/",
+    "license": "GPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/eden-emulator/Releases/releases/download/v0.0.3-rc3/Eden-Windows-v0.0.3-rc3-amd64.zip",
+            "hash": "88c398a4c556615e79b22f3c2f6d3ce316824238a717c64666aeffefd81ac0db"
+        }
+    },
+    "shortcuts": [
+        [
+            "eden.exe",
+            "Eden"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/eden-emulator/Releases"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/eden-emulator/Releases/releases/download/$version/Eden-Windows-$version-amd64.zip"
+            }
+        }
+    }
+}

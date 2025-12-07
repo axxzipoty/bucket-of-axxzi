@@ -9,7 +9,7 @@
             "hash": "8d9e4fcac54db8d17666b841c310fc35ff4cd2306584cf2aca1bf7901d2c679a"
         }
     },
-    "pre_install": "Rename-Item \"$dir\\ck-client-windows-amd64-v2.11.0.exe\" \"$dir\\ck-client.exe\"",
+    "pre_install": "Rename-Item \"$dir\\ck-client-windows-amd64-v$version.exe\" \"$dir\\ck-client.exe\"",
     "bin": "ck-client.exe",
     "checkver": {
         "github": "https://github.com/cbeuw/Cloak"
