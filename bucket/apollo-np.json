@@ -15,7 +15,7 @@
     },
     "pre_install": [
         "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
-        "Remove-Item -Path \"$dir\\`$PLUGINSDIR\" -Force -Recurse"
+        "Remove-Item -Path \"$dir\\`$PLUGINSDIR\" -Force -Recurse -ErrorAction SilentlyContinue"
     ],
     "post_install": [
         "Start-Process \"$dir\\drivers\\sudovda\\install.bat\" -WindowStyle Hidden -Wait",
@@ -56,3 +56,4 @@
         }
     }
 }
+
