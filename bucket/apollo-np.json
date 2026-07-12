@@ -42,7 +42,7 @@
         "Start-Process \"$dir\\scripts\\uninstall-service.bat\" -WindowStyle Hidden -Wait",
         "Start-Process \"$dir\\sunshine.exe\" -ArgumentList \"--restore-nvprefs-undo\" -WindowStyle Hidden -Wait",
         "powershell \"$dir\\scripts\\uninstall-gamepad.ps1\" -WindowStyle Hidden -Wait",
-        "Start-Process \"$dir\\drivers\\sudovda\\uninstall.bat\" -WindowStyle Hidden"
+        "Start-Process \"$dir\\drivers\\sudovda\\uninstall.bat\" -WindowStyle Hidden -Wait"
     ],
     "checkver": {
         "github": "https://github.com/ClassicOldSong/Apollo",
