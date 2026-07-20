@@ -14,6 +14,6 @@
         "github": "https://github.com/Ameliorated-LLC/trusted-uninstaller-cli"
     },
     "autoupdate": {
-        "url": "https://github.com/Ameliorated-LLC/trusted-uninstaller-cli/releases/download/$version/AME-Wizard-Beta.exe"
+        "url": "https://github.com/Ameliorated-LLC/trusted-uninstaller-cli/releases/download/$version/AME-Beta-v$version.exe"
     }
 }
