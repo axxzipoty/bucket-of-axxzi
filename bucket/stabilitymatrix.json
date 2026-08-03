@@ -1,13 +1,13 @@
 {
-    "version": "2.16.1",
+    "version": "2.16.2",
     "description": "Multi-Platform Package Manager for Stable Diffusion",
     "license": {
         "identifier": "AGPL-3.0",
         "url": "https://github.com/LykosAI/StabilityMatrix?tab=AGPL-3.0-1-ov-file"
     },
-    "url": "https://github.com/LykosAI/StabilityMatrix/releases/download/v2.16.1/StabilityMatrix-win-x64.zip",
+    "url": "https://github.com/LykosAI/StabilityMatrix/releases/download/v2.16.2/StabilityMatrix-win-x64.zip",
     "homepage": "https://github.com/LykosAI/StabilityMatrix",
-    "hash": "9ed56e7303a5c5967986575bbb27beea41ecbaab3ada4968eefce0edaaf3ea34",
+    "hash": "d76bd98c3fad844d05695cb1306083c1cf9424909570812866cad8bca220afca",
     "bin": "StabilityMatrix.exe",
     "shortcuts": [
         [
