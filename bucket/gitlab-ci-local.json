@@ -1,12 +1,12 @@
 {
-    "version": "4.75.0",
+    "version": "4.75.1",
     "description": "Run GitLab pipelines locally as a shell or Docker executor",
     "homepage": "https://github.com/firecow/gitlab-ci-local",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/firecow/gitlab-ci-local/releases/download/4.75.0/gitlab-ci-local-windows-amd64.zip",
-            "hash": "36504f92d66a54a3f25e77e70ba9a8d32e8a1f183ffdfd204533a406cb3c1d66"
+            "url": "https://github.com/firecow/gitlab-ci-local/releases/download/4.75.1/gitlab-ci-local-windows-amd64.zip",
+            "hash": "6b8273eca67faa3d98e5ed1706904fc455cd4da2371ce670a663fd96539112d9"
         }
     },
     "bin": "gitlab-ci-local.exe",
