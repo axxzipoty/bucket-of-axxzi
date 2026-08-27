@@ -1,0 +1,41 @@
+{
+    "version": "11.5.1",
+    "description": "Local AI server for chat, coding, speech, and image generation.",
+    "homepage": "https://lemonade-server.ai/",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/lemonade-sdk/lemonade/releases/download/v11.5.1/lemonade.msi",
+            "hash": "62380b92ec6ea2c5b01961d4ea11c41af83d2aa94f80b5835895efd5369f58aa"
+        }
+    },
+    "extract_dir": "LocalApp\\lemonade_server",
+    "persist": "cache",
+    "env_set": {
+        "LEMONADE_CACHE_DIR": "$persist_dir\\cache"
+    },
+    "bin": [
+        "bin\\lemonade.exe",
+        "bin\\LemonadeServer.exe"
+    ],
+    "shortcuts": [
+        [
+            "app\\lemonade-app.exe",
+            "Lemonade"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/lemonade-sdk/lemonade"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/lemonade-sdk/lemonade/releases/download/v$version/lemonade.msi"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/lemonade-sdk/lemonade/releases/expanded_assets/v$version",
+            "regex": "lemonade\\.msi.*?sha256:([a-fA-F\\d]{64})"
+        }
+    }
+}
