@@ -34,13 +34,11 @@
         "$startupPath = [Environment]::GetFolderPath('Startup') + '\\Programs\\Scoop Apps'",
         "$shortcutPath = Join-Path $startupPath 'DWMBlurGlass.lnk'",
         "if (Test-Path $shortcutPath) { Remove-Item $shortcutPath -Force }"
-
     ],
     "checkver": {
         "github": "https://github.com/Maplespe/DWMBlurGlass"
     },
     "autoupdate": {
-        "url": "https://github.com/Maplespe/DWMBlurGlass/releases/download/$version/DWMBlurGlass_$version_x64.zip"
+        "url": "https://github.com/Maplespe/DWMBlurGlass/releases/download/$version/DWMBlurGlass_$matchHead_x64.zip"
     }
 }
-

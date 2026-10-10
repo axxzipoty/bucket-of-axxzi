@@ -8,9 +8,7 @@
     "homepage": "https://www.computernetworkingnotes.com/ccna-study-guide/download-packet-tracer-for-windows-and-linux.html",
     "hash": "1aa1094bfa611c955c2e2885aea3bc8685211c95b55de017242fd0d38eb7cab1",
     "innosetup": true,
-    "bin": [
-        "bin\\PacketTracer.exe"
-    ],
+    "bin": "bin\\PacketTracer.exe",
     "shortcuts": [
         [
             "bin\\PacketTracer.exe",

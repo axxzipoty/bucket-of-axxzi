@@ -1,5 +1,5 @@
 {
-    "version": "6.3",
+    "version": "6.9",
     "homepage": "https://www.simplestickynotes.com/",
     "description": "A simple, easy-to-use, absolutely free, fast and efficient note taking software.",
     "license": {
@@ -18,9 +18,10 @@
     "checkver": {
         "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
         "url": "https://www.simplestickynotes.com/download/",
-        "regex": "\\</a\\>\\:\\s([\\d.]+)\\<br\\>"
+        "regex": "Version</strong>: ([0-9.]+)<br"
     },
     "autoupdate": {
         "url": "https://www.simplestickynotes.com/setup/Setup_SimpleStickyNotes.exe"
-    }
+    },
+    "hash": "5a5dcadee27c31179e0a8d8b8b96d1bcefc90d1fdceddcc0da759a3b9a8850fc"
 }

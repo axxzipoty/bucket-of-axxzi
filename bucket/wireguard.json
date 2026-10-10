@@ -9,6 +9,10 @@
         "https://github.com/DrEm-s/wireguard-windows-portable/releases/download/1.0.2/wg.exe",
         "https://github.com/DrEm-s/wireguard-windows-portable/releases/download/1.0.2/wireguard.exe"
     ],
+    "hash": [
+        "228e997260d8a1c6cb6114b512b2f36341e2cc991a0c7c77a8ab1bde8ce41dc2",
+        "966065900a9c24bf11f0077f90164a7d6eb02cc442f90eddf6f4a709746fb710"
+    ],
     "homepage": "https://github.com/DrEm-s/wireguard-windows-portable",
     "bin": [
         "wireguard.exe",
@@ -21,14 +25,5 @@
         ]
     ],
     "persist": "user",
-    "checkver": {
-        "github": "https://github.com/DrEm-s/wireguard-windows-portable"
-    },
-    "autoupdate": {
-        "url": [
-            "https://github.com/DrEm-s/wireguard-windows-portable/releases/download/$version/wg.exe",
-            "https://github.com/DrEm-s/wireguard-windows-portable/releases/download/$version/wireguard.exe"
-        ],
-        "extract_dir": "wireguard-$version"
-    }
+    "notes": "Upstream repository (DrEm-s/wireguard-windows-portable) no longer exists; this manifest is pinned to the last known files. Consider scoop uninstall wireguard and using the official WireGuard installer instead."
 }

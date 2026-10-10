@@ -19,13 +19,9 @@
         }
     },
     "installer": {
-        "script": [
-            "Invoke-ExternalCommand msiexec -ArgumentList @('/i',\"$dir\\setup.msi_\",'/qn','/norestart','ALLUSERS=1') -RunAs | Out-Null"
-        ]
+        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/i',\"$dir\\setup.msi_\",'/qn','/norestart','ALLUSERS=1') -RunAs | Out-Null"
     },
     "uninstaller": {
-        "script": [
-            "Invoke-ExternalCommand msiexec -ArgumentList @('/x',\"$r\\setup.msi_\",'/qn','/norestart','ALLUSERS=1') -RunAs | Out-Null"
-        ]
+        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/x',\"$r\\setup.msi_\",'/qn','/norestart','ALLUSERS=1') -RunAs | Out-Null"
     }
 }

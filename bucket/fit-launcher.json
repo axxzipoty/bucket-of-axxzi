@@ -1,12 +1,12 @@
 {
-    "version": "3.0.1",
+    "version": "4.2.0",
     "description": "A launcher for Fitgirl's Repacks.",
     "homepage": "https://github.com/CarrotRub/Fit-Launcher",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/carrotrub/fit-launcher/releases/download/app-v3.0.1/fit.launcher_3.0.1_x64_en-us.msi",
-            "hash": "d515f064bbe671e500ab414c0585191deed21abf1979a1539edec6de0be75b31"
+            "url": "https://github.com/carrotrub/fit-launcher/releases/download/app-v4.2.0/Fit.Launcher_4.2.0_x64_en-US.msi",
+            "hash": "06539b8d271c01715e9c24d0c5857fb3f0d27111e6b80e511db0dd861bed82b6"
         }
     },
     "shortcuts": [
@@ -16,13 +16,14 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/CarrotRub/Fit-Launcher"
+        "github": "https://github.com/CarrotRub/Fit-Launcher",
+        "regex": "tag/app-v([0-9.]+)"
     },
     "extract_dir": "PFiles\\Fit Launcher",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/carrotrub/fit-launcher/releases/download/app-v$version/fit.launcher_$version_x64_en-us.msi"
+                "url": "https://github.com/carrotrub/fit-launcher/releases/download/app-v$version/Fit.Launcher_$version_x64_en-US.msi"
             }
         }
     }

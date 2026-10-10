@@ -18,15 +18,14 @@
             "Deep Live Cam"
         ]
     ],
-    "post_install": {
-      "script": [
+    "post_install": [
         "New-Item -ItemType Junction -Path \"$dir\\tmp\\Desktop\" -Target \"~\\Desktop\"",
         "New-Item -ItemType Junction -Path \"$dir\\tmp\\Downloads\" -Target \"~\\Downloads\""
-      ]
-    },
-    "persist": [
-      "models",
-      "tmp"
     ],
-    "extract_dir": "Deep-Live-Cam-cuda"
+    "persist": [
+        "models",
+        "tmp"
+    ],
+    "extract_dir": "Deep-Live-Cam-cuda",
+    "notes": "The upstream 'cuda_deep-live-cam' release was deleted from GitHub and the archive.org mirror used here no longer resolves, so a fresh install of this manifest will fail."
 }

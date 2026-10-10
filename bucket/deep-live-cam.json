@@ -1,15 +1,15 @@
 {
-    "version": "2.7.5-",
-    "description": "1Remote is a modern personal remote session manager and launcher. It is a single place to manage all your remote sessions supporting number of different protocols.",
+    "version": "1.3.0",
+    "description": "Real time face swap and one-click video deepfake with only a single image.",
     "license": {
         "identifier": "AGPL-3.0",
-        "url": "https://github.com/hacksider/Deep-Live-Cam/tree/cuda_deep-live-cam?tab=License-1-ov-file"
+        "url": "https://github.com/hacksider/Deep-Live-Cam?tab=License-1-ov-file"
     },
     "url": [
-        "https://github.com/hacksider/Deep-Live-Cam",
-        "https://github.com/hacksider/Deep-Live-Cam/releases/download/cuda_deep-live-cam/Deep-Live-Cam-cuda.z02",
-        "https://github.com/hacksider/Deep-Live-Cam/releases/download/cuda_deep-live-cam/Deep-Live-Cam-cuda.z03",
-        "https://github.com/hacksider/Deep-Live-Cam/releases/download/cuda_deep-live-cam/Deep-Live-Cam-cuda.zip"
+        "https://web.archive.org/web/20240826000819mp_/https://github.com/hacksider/Deep-Live-Cam/releases/download/cuda_deep-live-cam/Deep-Live-Cam-cuda.z01",
+        "https://web.archive.org/web/20240826000819mp_/https://github.com/hacksider/Deep-Live-Cam/releases/download/cuda_deep-live-cam/Deep-Live-Cam-cuda.z02",
+        "https://web.archive.org/web/20240826000819mp_/https://github.com/hacksider/Deep-Live-Cam/releases/download/cuda_deep-live-cam/Deep-Live-Cam-cuda.z03",
+        "https://web.archive.org/web/20240826000819mp_/https://github.com/hacksider/Deep-Live-Cam/releases/download/cuda_deep-live-cam/Deep-Live-Cam-cuda.zip"
     ],
     "homepage": "https://github.com/hacksider/Deep-Live-Cam",
     "bin": "start_portable_nvidia.bat",
@@ -20,11 +20,5 @@
         ]
     ],
     "extract_dir": "Deep-Live-Cam-cuda",
-    "checkver": {
-        "github": "https://github.com/hacksider/Deep-Live-Cam"
-    },
-    "autoupdate": {
-        "url": "https://github.com/hacksider/Deep-Live-Cam",
-        "extract_dir": "Deep-Live-Cam-cuda"
-    }
+    "notes": "Upstream deleted the release binaries from the Deep-Live-Cam repository (the 2.x tags publish no assets, and the 'cuda_deep-live-cam' release is gone from GitHub), so a fresh install downloads from archive.org instead. checkver/autoupdate are intentionally absent: upstream tags no longer map to any downloadable file. deep-live-cam-alt.json is the same pinned build."
 }

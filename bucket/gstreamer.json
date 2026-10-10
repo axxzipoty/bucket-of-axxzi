@@ -44,7 +44,8 @@
     },
     "checkver": {
         "url": "https://gstreamer.freedesktop.org/download/",
-        "re": "(\\d+?\\.\\d+?\\.\\d+?) runtime installer"
+        "re": "(\\d+?\\.\\d+?\\.\\d+?) runtime installer",
+        "reverse": true
     },
     "autoupdate": {
         "architecture": {

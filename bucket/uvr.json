@@ -2,7 +2,8 @@
     "version": "5.6",
     "description": "GUI for a Vocal Remover that uses Deep Neural Networks.",
     "license": {
-        "identifier": "MIT"
+        "identifier": "MIT",
+        "url": "https://github.com/Anjok07/ultimatevocalremovergui/blob/master/LICENSE"
     },
     "url": "https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v5.6/UVR_v5.6.0_setup.exe#/dl.zip",
     "hash": "3516daea39ccb9fead27e8ba5879375a08b20a428264a7c1be6db1be7765b0fe",
@@ -14,9 +15,7 @@
         "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\", \"$dir\\Redist\" -Recurse"
     ],
     "homepage": "https://github.com/Anjok07/ultimatevocalremovergui",
-    "bin": [
-        "UVR.exe"
-    ],
+    "bin": "UVR.exe",
     "shortcuts": [
         [
             "UVR.exe",
@@ -28,7 +27,6 @@
         "github": "https://github.com/Anjok07/ultimatevocalremovergui"
     },
     "autoupdate": {
-        "url": "https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v$version/UVR_$version_setup.exe#/dl.zip",
-        "extract_dir": "chaiNNer-$version"
+        "url": "https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v$version/UVR_v$version.0_setup.exe#/dl.zip"
     }
 }

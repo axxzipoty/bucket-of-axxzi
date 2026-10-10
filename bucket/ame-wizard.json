@@ -4,9 +4,14 @@
     "description": "The Ultimate tool for modifying Windows.",
     "license": "MIT",
     "url": "https://github.com/Ameliorated-LLC/trusted-uninstaller-cli/releases/download/0.8.4/AME-Beta-v0.8.4.exe",
+    "hash": "a637f32b64e1493b315db9139065105656c84518dca20ce3b18c89750ee40c82",
+    "installer": {
+        "script": "Rename-Item \"$dir\\AME-Beta-v$version.exe\" \"$dir\\AME-Wizard.exe\""
+    },
+    "bin": "AME-Wizard.exe",
     "shortcuts": [
         [
-            "AME-Beta-v0.8.4.exe",
+            "AME-Wizard.exe",
             "AME Wizard"
         ]
     ],

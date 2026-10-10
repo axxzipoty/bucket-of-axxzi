@@ -1,14 +1,11 @@
 {
     "version": "1",
     "description": "ATLauncher is a simple and easy to use Minecraft Launcher.",
-    "license": {
-        "identifier": "Unknown"
-    },
-    "url": "https://atlauncher.com/download/exe#/ATLauncher.exe",
     "homepage": "https://atlauncher.com/",
-    "bin": [
-        "ATLauncher.exe"
-    ],
+    "license": "GPL-3.0",
+    "url": "https://atlauncher.com/download/exe#/ATLauncher.exe",
+    "hash": "9e38e3d1a863e36bdbf0fc3a2617b9f35cba72221ad1757e34efc1ba4a3b0d7b",
+    "bin": "ATLauncher.exe",
     "shortcuts": [
         [
             "ATLauncher.exe",
