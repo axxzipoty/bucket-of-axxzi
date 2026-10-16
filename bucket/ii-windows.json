@@ -1,0 +1,35 @@
+{
+    "version": "1.0.8",
+    "description": "end-4's illogical-impulse (ii) desktop shell for Hyprland, ported to run natively on Windows 10 and 11: bar, workspaces, search, widgets, screen recording and Material You colours from your wallpaper.",
+    "license": {
+        "identifier": "GPL-3.0",
+        "url": "https://github.com/nunreasonable/ii-windows/blob/main/LICENSE"
+    },
+    "url": "https://github.com/nunreasonable/ii-windows/releases/download/v1.0.8/ii-windows-1.0.8.zip",
+    "homepage": "https://github.com/nunreasonable/ii-windows",
+    "hash": "33820e1767a73571e819f48ccc4c794142fdb28a848facaf620000ac52927ae2",
+    "notes": [
+        "The shell itself runs as qsw.exe; press Win+/ for the keybind list.",
+        "This is the portable package. The official ii-windows-setup.exe (same release) installs to %LOCALAPPDATA%\\ii-windows with autostart, terminal theming and update notifications; scoop cannot replace that setup."
+    ],
+    "bin": [
+        "qs.exe",
+        "qsw.exe"
+    ],
+    "shortcuts": [
+        [
+            "qsw.exe",
+            "illogical-impulse (ii-windows)"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/nunreasonable/ii-windows"
+    },
+    "autoupdate": {
+        "url": "https://github.com/nunreasonable/ii-windows/releases/download/v$version/ii-windows-$version.zip",
+        "hash": {
+            "url": "https://github.com/nunreasonable/ii-windows/releases/download/v$version/ii-windows-$version.zip.sha256",
+            "regex": "^([a-f0-9]{64})"
+        }
+    }
+}
