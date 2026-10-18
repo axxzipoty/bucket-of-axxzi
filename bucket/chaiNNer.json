@@ -1,11 +1,11 @@
 {
-    "version": "0.25.1",
+    "version": "0.26.0",
     "description": "A node-based image processing GUI aimed at making chaining image processing tasks easy and customizable. Born as an AI upscaling application, chaiNNer has grown into an extremely flexible and powerful programmatic image processing application.",
     "license": {
         "identifier": "GPL-3.0",
         "url": "https://github.com/chaiNNer-org/chaiNNer?tab=GPL-3.0-1-ov-file"
     },
-    "url": "https://github.com/chaiNNer-org/chaiNNer/releases/download/v0.25.1/chaiNNer-windows-x64-0.25.1-portable.zip",
+    "url": "https://github.com/chaiNNer-org/chaiNNer/releases/download/v0.26.0/chaiNNer-windows-x64-0.26.0-portable.zip",
     "homepage": "https://github.com/chaiNNer-org/chaiNNer",
     "bin": "chaiNNer.exe",
     "shortcuts": [
@@ -21,5 +21,5 @@
     "autoupdate": {
         "url": "https://github.com/chaiNNer-org/chaiNNer/releases/download/v$version/chaiNNer-windows-x64-$version-portable.zip"
     },
-    "hash": "ab06e3a8cf036ff76440fc162539b2c4c62abee99dd452ce0bf9c313d63450ed"
+    "hash": "87ece7a77d2a8bef8facc2a07a430749a58f36241fa41b87910605c963c5aa10"
 }
