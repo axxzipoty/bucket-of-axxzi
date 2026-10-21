@@ -1,14 +1,14 @@
 {
-    "version": "0.7.0",
+    "version": "0.7.1",
     "description": "High-performance Rust TUI Pokédex & evolution analyzer. Fetches PokeAPI data asynchronously, parses complex branch trees, and renders pixel-art sprites.",
     "license": {
         "identifier": "MIT",
         "url": "https://github.com/Huseynteymurzade28/pokeductor/blob/main/LICENSE"
     },
     "homepage": "https://github.com/Huseynteymurzade28/pokeductor",
-    "url": "https://github.com/Huseynteymurzade28/pokeductor/releases/download/v0.7.0/pokeductor-v0.7.0-x86_64-pc-windows-msvc.zip",
-    "hash": "3acd26dbace46263dc4a0e38ba196e868c2715c07cf26d314b6c050a4967a449",
-    "extract_dir": "pokeductor-v0.7.0-x86_64-pc-windows-msvc",
+    "url": "https://github.com/Huseynteymurzade28/pokeductor/releases/download/v0.7.1/pokeductor-v0.7.1-x86_64-pc-windows-msvc.zip",
+    "hash": "7f12f27c321a51dd0c90095bc0b271db48bd103ffce975c0546bd6bd1432fd72",
+    "extract_dir": "pokeductor-v0.7.1-x86_64-pc-windows-msvc",
     "bin": "pokeductor.exe",
     "checkver": {
         "github": "https://github.com/Huseynteymurzade28/pokeductor"
