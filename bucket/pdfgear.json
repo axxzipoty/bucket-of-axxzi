@@ -11,7 +11,7 @@
     },
     "homepage": "https://www.pdfgear.com/",
     "license": "Free",
-    "hash": "633a1a1ff3aef27541e8bd8a472066b8ffc10442ee83729388958604496db69a",
+    "hash": "e55f80ac7a59c367ed1d18ff77441cd55d22a3b0f9fd3a3cfad42eed2466f684",
     "shortcuts": [
         [
             "PDFLauncher.exe",
@@ -25,6 +25,6 @@
         "PDFLauncher.exe",
         "RegExt.exe"
     ],
-    "url": "https://downloadfiles.pdfgear.com/releases/windows/pdfgear_setup_v3.0.0.exe",
-    "version": "3.0.0"
+    "url": "https://downloadfiles.pdfgear.com/releases/windows/pdfgear_setup_v3.0.1.exe",
+    "version": "3.0.1"
 }
