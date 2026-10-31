@@ -1,5 +1,5 @@
 {
-    "version": "1.9.0",
+    "version": "1.9.1",
     "description": "Free and open-source PDF editor for Windows.",
     "homepage": "https://killerpdf.net",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/SteveTheKiller/KillerPDF/releases/download/v1.9.0/KillerPDF-Portable.exe",
-            "hash": "34cea10c8cb6acab26fbf3640b64400001b4df0cff74eec7a8f7549e87608e9e"
+            "url": "https://github.com/SteveTheKiller/KillerPDF/releases/download/v1.9.1/KillerPDF-Portable.exe",
+            "hash": "d7db6091607004168cb324c37abea94b866e79ed3864713d2f71df96280435c1"
         }
     },
     "bin": "KillerPDF-Portable.exe",
