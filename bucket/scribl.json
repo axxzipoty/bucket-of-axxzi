@@ -1,0 +1,29 @@
+{
+    "version": "0.1.1",
+    "description": "Fast, low-latency infinite-canvas sketching and whiteboard app for mouse, stylus and drawing tablets.",
+    "homepage": "https://github.com/shadowmkj/scribl",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shadowmkj/scribl/releases/download/v0.1.1/scribl_0.1.1_x64-setup.exe#/dl.7z",
+            "hash": "fdf254591a54c5117387a6384b0e95d2b6a8d111287d6f6b2caa5182ddbd2695"
+        }
+    },
+    "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Force -Recurse",
+    "shortcuts": [
+        [
+            "scribl.exe",
+            "Scribl"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/shadowmkj/scribl"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/shadowmkj/scribl/releases/download/v$version/scribl_$version_x64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}
