@@ -1,0 +1,26 @@
+{
+    "version": "1.2.0",
+    "description": "Virtual webcam that decides what a meeting sees: live camera, a freeze, a recorded loop, or a bad connection.",
+    "homepage": "https://github.com/gen-x-coder/CoffeeBreakCamPro",
+    "license": "MIT",
+    "extract_dir": "CoffeeBreakCamPro",
+    "url": "https://github.com/gen-x-coder/CoffeeBreakCamPro/releases/download/v1.2.0/CoffeeBreakCamPro-v1.2.0-windows.zip",
+    "hash": "fed1c127500df14cf1ef132e1c9fd31ef782be2b44619b4d8bff79c3cb74166a",
+    "pre_install": "if (!(Test-Path \"$dir\\config.json\")) { new-item \"$dir\\config.json\" -itemtype file | out-null }",
+    "shortcuts": [
+        [
+            "CoffeeBreakCamPro.exe",
+            "CoffeeBreak Cam Pro"
+        ]
+    ],
+    "persist": [
+        "config.json",
+        "backgrounds"
+    ],
+    "checkver": {
+        "github": "https://github.com/gen-x-coder/CoffeeBreakCamPro"
+    },
+    "autoupdate": {
+        "url": "https://github.com/gen-x-coder/CoffeeBreakCamPro/releases/download/v$version/CoffeeBreakCamPro-v$version-windows.zip"
+    }
+}
