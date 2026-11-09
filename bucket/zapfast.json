@@ -1,0 +1,44 @@
+{
+    "version": "0.21.1",
+    "description": "Fast, native and unofficial WhatsApp desktop client with no browser engine.",
+    "homepage": "https://zapfast.rocks/",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/crmne/zapfast/blob/main/LICENSE"
+    },
+    "extract_dir": "zapfast-v0.21.1-x86_64-pc-windows-msvc",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/crmne/zapfast/releases/download/v0.21.1/zapfast-v0.21.1-x86_64-pc-windows-msvc.zip",
+            "hash": "4099ebdeb2b650714902d69827299712bf5e63b51755ce5f900afdc13ccec773"
+        },
+        "arm64": {
+            "url": "https://github.com/crmne/zapfast/releases/download/v0.21.1/zapfast-v0.21.1-aarch64-pc-windows-msvc.zip",
+            "hash": "ab232f7e660fa2d8cb862f4251f57aa627d169b24c6c10931762477ec4e9e013"
+        }
+    },
+    "bin": "zapfast.exe",
+    "shortcuts": [
+        [
+            "zapfast.exe",
+            "ZapFast"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/crmne/zapfast"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/crmne/zapfast/releases/download/v$version/zapfast-v$version-x86_64-pc-windows-msvc.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/crmne/zapfast/releases/download/v$version/zapfast-v$version-aarch64-pc-windows-msvc.zip"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/crmne/zapfast/releases/download/v$version/checksums.txt",
+            "regex": "^([0-9a-f]{64})\\s+zapfast-v\\$version-(?:x86_64|aarch64)-pc-windows-msvc\\.zip$"
+        }
+    }
+}
