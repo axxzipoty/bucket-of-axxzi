@@ -1,0 +1,40 @@
+{
+    "version": "1.0.17",
+    "description": "Fast local launcher that searches file names, document and code content, and screenshots by OCR, with semantic search and MCP agent access.",
+    "homepage": "https://github.com/yjid/kensaku",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/yjid/kensaku/releases/download/v1.0.17/kensaku-portable-1.0.17-x64.zip",
+            "hash": "243657ed650151bae33241df2b8fe4e071bffcff63199ce492f8dac0762412d6"
+        },
+        "arm64": {
+            "url": "https://github.com/yjid/kensaku/releases/download/v1.0.17/kensaku-portable-1.0.17-arm64.zip",
+            "hash": "ea8a4ea8c2aa46792131124ffb8d0fad9811ed96ad49d0ef91ac838dbe60fc8c"
+        }
+    },
+    "shortcuts": [
+        [
+            "kensaku.exe",
+            "Kensaku"
+        ]
+    ],
+    "persist": "data",
+    "checkver": {
+        "github": "https://github.com/yjid/kensaku"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/yjid/kensaku/releases/download/v$version/kensaku-portable-$version-x64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/yjid/kensaku/releases/download/v$version/kensaku-portable-$version-arm64.zip"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/yjid/kensaku/releases/download/v$version/SHA256SUMS",
+            "regex": "^([0-9a-f]{64})\\s+\\./kensaku-portable-[0-9.]+-(?:x64|arm64)\\.zip$"
+        }
+    }
+}
