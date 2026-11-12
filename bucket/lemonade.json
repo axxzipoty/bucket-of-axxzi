@@ -1,12 +1,12 @@
 {
-    "version": "2026.45.3",
+    "version": "2026.46.2",
     "description": "Local AI server for chat, coding, speech, and image generation.",
     "homepage": "https://lemonade-server.ai/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lemonade-sdk/lemonade/releases/download/v2026.45.3/lemonade.msi",
-            "hash": "60a33cfe26cbb0c3926f451a4829f3922aec1edc43114cf1ce198ce3f02d2208"
+            "url": "https://github.com/lemonade-sdk/lemonade/releases/download/v2026.46.2/lemonade.msi",
+            "hash": "7ba0f67682960a0e189122efe6e2825f8c2b8e0fd52cd51554f51dd9bf9dbd27"
         }
     },
     "extract_dir": "LocalApp\\lemonade_server",
