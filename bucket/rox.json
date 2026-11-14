@@ -1,12 +1,12 @@
 {
-    "version": "1.34.2",
+    "version": "1.34.3",
     "description": "Desktop music player for large, carefully tagged local libraries. Rust, gpui-based; composable panels, deep tagging, smart playlists, scrobbling",
     "homepage": "https://rox.music",
     "license": "AGPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zealsprince/rox/releases/download/v1.34.2/rox-v1.34.2-windows-x86_64.zip",
-            "hash": "7051b89f681900e7e3aa289cb5f5681a5a194c5d5226cadc35c09f741a5f5629",
+            "url": "https://github.com/zealsprince/rox/releases/download/v1.34.3/rox-v1.34.3-windows-x86_64.zip",
+            "hash": "ce477a9892d5188216d3832dd65dc349754fd62a08d70b6da0ac41ca50e0635b",
             "pre_install": "New-Item -Path \"$dir\\portable\" -ItemType File -Force | Out-Null"
         }
     },
