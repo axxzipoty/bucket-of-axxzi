@@ -1,0 +1,33 @@
+{
+    "version": "0.99.6.4",
+    "description": "GPU undervolt companion tool for RTX 30/40/50: one-click presets, voltage-step scanner, DX12+DXR stress test, crash recovery and clock-efficiency control, used alongside MSI Afterburner.",
+    "homepage": "https://github.com/christianp403-spec/NV-UV",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://github.com/christianp403-spec/NV-UV/blob/main/LICENSE.txt"
+    },
+    "notes": "NV-UV needs MSI Afterburner with hardware monitoring enabled; settings live in %LocalAppData%/NV-UV and survive updates. NV-UV's own in-app updater also works inside this install.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/christianp403-spec/NV-UV/releases/download/v0.99.6.4/NV-UV-v0.99.6.4-Portable.zip",
+            "hash": "45137208418ead594ffb05e476848e9b233fccc8b85ae40a690df34b60660488"
+        }
+    },
+    "shortcuts": [
+        [
+            "NV-UV.exe",
+            "NV-UV"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/christianp403-spec/NV-UV/releases.atom",
+        "regex": "<title>NV-UV v([\\d.]+)</title>"
+    },
+    "autoupdate": {
+        "url": "https://github.com/christianp403-spec/NV-UV/releases/download/v$version/NV-UV-v$version-Portable.zip",
+        "hash": {
+            "url": "https://github.com/christianp403-spec/NV-UV/releases/download/v$version/nv-uv-update-manifest.txt",
+            "regex": "asset_sha256=([a-f0-9]{64})"
+        }
+    }
+}
