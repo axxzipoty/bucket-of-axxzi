@@ -1,16 +1,16 @@
 {
-    "version": "1.0.17",
+    "version": "1.0.18",
     "description": "Fast local launcher that searches file names, document and code content, and screenshots by OCR, with semantic search and MCP agent access.",
     "homepage": "https://github.com/yjid/kensaku",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yjid/kensaku/releases/download/v1.0.17/kensaku-portable-1.0.17-x64.zip",
-            "hash": "243657ed650151bae33241df2b8fe4e071bffcff63199ce492f8dac0762412d6"
+            "url": "https://github.com/yjid/kensaku/releases/download/v1.0.18/kensaku-portable-1.0.18-x64.zip",
+            "hash": "b645c688056e5a8ac154d4d66e38bb4222811535699317a4798a3ab195f5496d"
         },
         "arm64": {
-            "url": "https://github.com/yjid/kensaku/releases/download/v1.0.17/kensaku-portable-1.0.17-arm64.zip",
-            "hash": "ea8a4ea8c2aa46792131124ffb8d0fad9811ed96ad49d0ef91ac838dbe60fc8c"
+            "url": "https://github.com/yjid/kensaku/releases/download/v1.0.18/kensaku-portable-1.0.18-arm64.zip",
+            "hash": "1360a8b84f8d83e79d2be92374e59a0e0b300ae8a693c83aa9b7184066fde331"
         }
     },
     "shortcuts": [
